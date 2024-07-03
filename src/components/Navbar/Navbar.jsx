@@ -1,10 +1,21 @@
 import { NavLink } from "react-router-dom";
-
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const navLink = <>
          <NavLink to='/' className={({ isActive }) => isActive ? 'font-bold text-[#396cf0] mr-3 ' : 'text-[#333333] mr-2 font-semibold'}><li>Portfolio</li></NavLink>
-         <NavLink to='/blog' className={({ isActive }) => isActive ? 'font-bold text-[#396cf0] mr-3 ' : 'text-[#333333] mr-2 font-semibold'}><li>Blogs</li></NavLink>
+         <HashLink smooth to='#skills' className='font-semibold mr-4'>
+                <li>Skills</li>
+         </HashLink>
+         <HashLink smooth to='#projects' className='font-semibold mr-4'>
+                <li>Projects</li>
+         </HashLink>
+         <HashLink smooth to='#education' className='font-semibold mr-4'>
+                <li>Education</li>
+         </HashLink>
+         <HashLink smooth to='#contact' className='font-semibold mr-4'>
+                <li>Contact</li>
+         </HashLink>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -40,7 +51,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+            <HashLink smooth to='#contact' className='px-8 py-3 font-semibold border rounded dark:border-gray-800 dark:text-gray-800  mr-4'>
+                <p>Hire Me</p>
+         </HashLink>
             </div>
         </div>
     );

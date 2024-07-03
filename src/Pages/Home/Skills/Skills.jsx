@@ -8,7 +8,7 @@ import logo7 from '../../../assets/icons/icons8-html-96.png'
 import logo8 from '../../../assets/icons/icons8-tailwind-css-96.png'
 const Skills = () => {
     return (
-        <div className="bg-[#0a192f]">
+        <div id='skills' className="bg-[#0a192f]">
             <div className='text-center text-2xl md:text-4xl py-5 '>
                 <h2 className='text-[#ccd6f6] font-semibold'>Technology that I know</h2>
             </div>

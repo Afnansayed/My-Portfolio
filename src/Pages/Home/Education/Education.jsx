@@ -2,7 +2,7 @@
 
 const Education = () => {
     return (
-        <div className="bg-[#0a192f]">
+        <div id="education" className="bg-[#0a192f]">
             <div >
                 <h2 className="text-4xl text-center font-semibold py-5 text-[#ccd6f6]">Educational Qualification</h2>
             </div>

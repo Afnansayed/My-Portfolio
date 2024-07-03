@@ -1,7 +1,9 @@
-import  { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import linkedin from '../../../assets/icons/icons8-linkedin-96.png'
 import facebook from '../../../assets/icons/icons8-facebook-96.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const form = useRef();
@@ -14,7 +16,16 @@ const Contact = () => {
         })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    toast.success('🦄 I Received your message', {
+                        position: "top-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "colored",
+                        });
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -22,7 +33,7 @@ const Contact = () => {
             );
     };
     return (
-        <section className="py-6 dark:bg-[#0a192f] dark:text-[#ccd6f6] md:pt-12">
+        <section id='contact' className="py-6 dark:bg-[#0a192f] dark:text-[#ccd6f6] md:pt-12">
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                 <div className="py-6 md:py-0 md:px-6">
                     <h1 className="text-4xl font-bold">Contact Me</h1>
@@ -55,24 +66,35 @@ const Contact = () => {
                         <div className='hover:border-4 hover:rounded-lg hover:border-gray-100 hover:scale-110'>
                             <a href="https://www.facebook.com/zofaf.razin"> <p><img src={facebook} alt="" /></p></a>
                         </div>
-                        
                     </div>
                 </div>
                 <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6" ref={form} onSubmit={sendEmail}>
                     <label className="block">
                         <span className="mb-1">Full name</span>
-                        <input type="text" name="user_name" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 p-3" />
+                        <input type="text" name="user_name" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 p-3 text-[#0a192f]" />
                     </label>
                     <label className="block">
                         <span className="mb-1">Email address</span>
-                        <input type="email" name="user_email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 p-3" />
+                        <input type="email" name="user_email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 p-3 text-[#0a192f]" />
                     </label>
                     <label className="block">
                         <span className="mb-1">Message</span>
-                        <textarea rows="3" name="message" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+                        <textarea rows="3" name="message" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 text-[#0a192f] p-3"></textarea>
                     </label>
                     <button type="submit" className="px-8 py-3 font-semibold border rounded dark:border-[#12eac3] text-[#12eac3] hover:text-[#ccd6f6] hover:border-[#ccd6f6]">Send Message</button>
                 </form>
+                <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="colored"
+                    transition:Bounce/>
             </div>
         </section>
     );
