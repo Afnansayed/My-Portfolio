@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import linkedin from '../../../assets/icons/icons8-linkedin-96.png'
 import facebook from '../../../assets/icons/icons8-facebook-96.png'
+import github from '../../../assets/icons/icons8-github-96.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -33,7 +34,7 @@ const Contact = () => {
             );
     };
     return (
-        <section id='contact' className="py-6 dark:bg-[#0a192f] dark:text-[#ccd6f6] md:pt-12">
+        <section id='contact' className="py-6 dark:bg-[#0a192f] dark:text-[#ccd6f6] md:pt-12 md:pb-16">
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                 <div className="py-6 md:py-0 md:px-6">
                     <h1 className="text-4xl font-bold">Contact Me</h1>
@@ -65,6 +66,9 @@ const Contact = () => {
                         </div>
                         <div className='hover:border-4 hover:rounded-lg hover:border-gray-100 hover:scale-110'>
                             <a href="https://www.facebook.com/zofaf.razin"> <p><img src={facebook} alt="" /></p></a>
+                        </div>
+                        <div className='hover:border-4 hover:rounded-lg hover:border-gray-100 hover:scale-110'>
+                            <a href="https://github.com/Afnansayed"> <p><img src={github} alt="" /></p></a>
                         </div>
                     </div>
                 </div>

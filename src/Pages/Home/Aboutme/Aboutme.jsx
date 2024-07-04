@@ -2,7 +2,7 @@ import myimg from '../../../assets/razin.jpg'
 
 const Aboutme = () => {
     return (
-        <div className='bg-[#0a192f]'>
+        <div id='aboutme' className='bg-[#0a192f]'>
             <div className='w-full p-2 md:p-8 flex flex-col md:flex-row gap-5 pt-5'>
                  <div className='rounded-full md:rounded-none w-80 md:w-full  border-[20px] md:border-none ml-8 md:ml-24 border-[#ccd6f6]'>
                  <img src={myimg} alt="" className='rounded-full md:rounded-xl md:w-72 ' />
