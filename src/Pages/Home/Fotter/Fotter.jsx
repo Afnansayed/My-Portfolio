@@ -7,19 +7,19 @@ const Fotter = () => {
     return (
         <div>
             <footer className="footer border-base-300 border-t  bg-[#0a192f] dark:text-[#ccd6f6] py-12">
-                <nav className=" grid grid-flow-col gap-6 mx-auto">
-                    <h6 className="footer-title">NavLinks</h6>
+                <nav className=" grid grid-flow-col gap-4 mx-auto">
+                    <h6 className="footer-title sm:block hidden">NavLinks</h6>
                     <HashLink smooth to='#aboutme' className='font-semibold mr-4'>
-                        <li>About Me</li>
+                        About Me
                     </HashLink>
                     <HashLink smooth to='#skills' className='font-semibold mr-4'>
-                        <li>Skills</li>
+                        Skills
                     </HashLink>
                     <HashLink smooth to='#projects' className='font-semibold mr-4'>
-                        <li>Projects</li>
+                        Projects
                     </HashLink>
                     <HashLink smooth to='#education' className='font-semibold mr-4'>
-                        <li>Education</li>
+                        Education
                     </HashLink>
                 </nav>
             </footer>
