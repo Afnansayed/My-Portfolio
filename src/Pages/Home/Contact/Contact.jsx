@@ -34,7 +34,7 @@ const Contact = () => {
             );
     };
     return (
-        <section id='contact' className="py-6 dark:bg-[#0a192f] dark:text-[#ccd6f6] md:pt-12 md:pb-16">
+        <section id='contact' className="py-6 bg-[#0a192f] text-[#ccd6f6] md:pt-12 md:pb-16">
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                 <div className="py-6 md:py-0 md:px-6">
                     <h1 className="text-4xl font-bold">Contact Me</h1>
@@ -75,17 +75,17 @@ const Contact = () => {
                 <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6" ref={form} onSubmit={sendEmail}>
                     <label className="block">
                         <span className="mb-1">Full name</span>
-                        <input type="text" name="user_name" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 p-3 text-[#0a192f]" />
+                        <input type="text" name="user_name" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-600 bg-gray-100 p-3 text-[#0a192f]" />
                     </label>
                     <label className="block">
                         <span className="mb-1">Email address</span>
-                        <input type="email" name="user_email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 p-3 text-[#0a192f]" />
+                        <input type="email" name="user_email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-600 bg-gray-100 p-3 text-[#0a192f]" />
                     </label>
                     <label className="block">
                         <span className="mb-1">Message</span>
-                        <textarea rows="3" name="message" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 text-[#0a192f] p-3"></textarea>
+                        <textarea rows="3" name="message" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-600 bg-gray-100 text-[#0a192f] p-3"></textarea>
                     </label>
-                    <button type="submit" className="px-8 py-3 font-semibold border rounded dark:border-[#12eac3] text-[#12eac3] hover:text-[#ccd6f6] hover:border-[#ccd6f6]">Send Message</button>
+                    <button type="submit" className="px-8 py-3 font-semibold border rounded border-[#12eac3] text-[#12eac3] hover:text-[#ccd6f6] hover:border-[#ccd6f6]">Send Message</button>
                 </form>
                 <ToastContainer
                     position="top-center"

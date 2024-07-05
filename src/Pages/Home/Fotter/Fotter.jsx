@@ -6,7 +6,7 @@ import instragram from '../../../assets/icons/icons8-instagram-96.png'
 const Fotter = () => {
     return (
         <div>
-            <footer className="footer border-base-300 border-t  bg-[#0a192f] dark:text-[#ccd6f6] py-12">
+            <footer className="footer border-base-300 border-t  bg-[#0a192f] text-[#ccd6f6] py-12">
                 <nav className=" grid grid-flow-col gap-4 mx-auto">
                     <h6 className="footer-title sm:block hidden">NavLinks</h6>
                     <HashLink smooth to='#aboutme' className='font-semibold mr-4'>
@@ -23,7 +23,7 @@ const Fotter = () => {
                     </HashLink>
                 </nav>
             </footer>
-            <footer className="footer bg-[#0a192f] dark:text-[#ccd6f6] border-base-300 border-t px-10 py-4">
+            <footer className="footer bg-[#0a192f] text-[#ccd6f6] border-base-300 border-t px-10 py-4">
                 <aside className="grid-flow-col items-center">
                     <div>
                         <img src={myimg} className='w-12 rounded-full' alt="" />

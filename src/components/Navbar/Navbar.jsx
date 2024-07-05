@@ -19,7 +19,7 @@ const Navbar = () => {
         </HashLink>
     </>
     return (
-        <div className="navbar bg-[#0a192f] dark:text-[#12eac3] border-b-2">
+        <div className="navbar bg-[#0a192f] text-[#12eac3] border-b-2">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

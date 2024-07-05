@@ -7,7 +7,7 @@ const Education = () => {
                 <h2 className="text-4xl text-center font-semibold py-5 text-[#ccd6f6]">Educational Qualification</h2>
             </div>
             <div className="p-8">
-                <div className="flex  items-center justify-between p-6 border-l-[25px] sm:py-8 dark:border-[#12eac3] dark:bg-[#ccd6f6] dark:text-gray-800 rounded-sm">
+                <div className="flex  items-center justify-between p-6 border-l-[25px] sm:py-8 border-[#12eac3] bg-[#ccd6f6] text-gray-800 rounded-sm">
                     <div className="flex flex-col md:flex-row  gap-5 justify-between">
                         <div>
                             <h3 className="text-lg"><span className="text-xl font-semibold">University Name </span> | Northern University Bangladesh</h3>
@@ -20,7 +20,7 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex  items-center justify-between p-6 border-l-[25px] sm:py-8 dark:border-[#12eac3] dark:bg-[#ccd6f6] dark:text-gray-800 rounded-sm mt-6">
+                <div className="flex  items-center justify-between p-6 border-l-[25px] sm:py-8 border-[#12eac3] bg-[#ccd6f6] text-gray-800 rounded-sm mt-6">
                     <div className="flex flex-col md:flex-row  gap-5 ">
                         <div className="md:w-1/2 ">
                             <h3 className="text-lg"><span className="text-xl font-semibold">Institute Name</span> |  Cox’s Bazar Polytechnic Institute</h3>
